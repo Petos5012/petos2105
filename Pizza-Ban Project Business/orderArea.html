@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Area</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* *oderArea.html */
+        body {
+            background: #f5f2f2;
+            scroll-behavior: smooth;
+            
+        }
+
+        #navAreaContainer {
+            position: sticky;
+            font-family: "Roboto", sans-serif;
+            padding: 2rem;
+            font-size: 1rem;
+            box-shadow: 0px 0px 10px #e0c00e;
+            background-color: #d61c2b;
+            background-image: linear-gradient(210deg, #fbb034 0%, #ffdd00 74%);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #navAreaContainer li {
+            list-style: none;
+            position: absolute;
+            right: 5rem;
+            top: 2rem;
+        }
+
+        #navAreaContainer a {
+            text-decoration: none;
+            margin-left: 2rem;
+            color: #000;
+            font-family: "Lato", sans-serif;
+        }
+
+        #listPizzaBan {
+            text-align: start;
+            word-wrap: break-word;
+            word-break: keep-all;
+            box-sizing: border-box;
+        }
+
+        .pizzaListed {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            box-sizing: border-box;
+            margin: 2rem;
+            gap: 2rem;
+        }
+
+        div .orderImage {
+            aspect-ratio: 2/2;
+            width: 250px;
+            border-radius: 10px 10px 1rem;
+
+        }
+
+        div .linksPizza {
+            display: flex;
+            background: #fff;
+            border: solid 1px;
+            border-radius: 10px;
+            align-items: center;
+            box-shadow: 0px 0px 10px #0000006a;
+        }
+
+        div .pizzaHeader {
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+
+        div .pizzaLinks {
+            margin: 1rem 2rem 2rem 2rem;
+            font-family: "Roboto", sans-serif;
+        }
+
+        hr {
+            margin: 1rem 0px 1rem 0rem;
+            width: 100%;
+            border: 2px solid;
+        }
+
+        .pizzaParagraph:hover {
+            color: #515151;
+        }
+
+        #contactUsOrder {
+            border: solid 1px;
+            display: grid;
+        }
+
+        #container-4 {
+            display: grid;
+            min-height: 30vh;
+            background: #212529;
+            color: #fff;
+            place-items: center;
+        }
+
+        .container-4 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .c4row-1 {
+            margin-right: 20rem;
+            line-height: 1.5rem;
+        }
+
+        .c4row-1 ul {
+            list-style: none;
+        }
+
+        .c4row-1 a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .c4row-2 {
+            word-break: break-all;
+            line-height: 1.7rem;
+            font-family: 'Times New Roman', Times;
+        }
+    </style>
+
+
+    <div id="navAreaContainer">
+        <li class="navArea">
+            <a href="./main.html" class="linksA">Home</a>
+            <a href="#container-4" class="linksA">Contact Us</a>
+            <a href="#container-4" class="linksA">About Us</a>
+        </li>
+    </div>
+
+    <div id="listPizzaBan">
+        <div class="pizzaListed">
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Cheese Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">1. Cheese Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">It should be no shocker that a classic is the statistical favorite. Cheese
+                        pizza is one of the
+                        most
+                        popular choices. It
+                        will always be a simple, unadorned masterpiece on its own.</p>
+                </div>
+            </div>
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/BBQ Chicken Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">2. BBQ Chicken Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">If you love BBQ chicken and you love pizza, why not put them together?
+                        This has long been a cult
+                        favorite of sports fans
+                        and college kids. The chicken slathered over the top of a pie gives it a tangy, sweet flavor
+                        that
+                        can’t be beaten.</p>
+                </div>
+            </div>
+
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Buffalo Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">3. Buffalo Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">Who says your pizza has to be strictly tomato-sauce based? Branch out with
+                        some buffalo sauce on
+                        your
+                        pie. All its
+                        spicy, salty, buttery goodness is a natural pairing for pizza.</p>
+                </div>
+            </div>
+
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Hawaiian Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">4. Hawaiian Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">Pineapple might not be the first thing that comes to mind when you think
+                        pizza. But add in some
+                        ham
+                        and it creates an
+                        unexpectedly solid sweet and salty combination for this type of pizza.</p>
+                </div>
+            </div>
+
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Margherita Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">5. Margherita Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">Deceptively simple, the Margherita pizza is made with basil, fresh
+                        mozzarella, and tomatoes.
+                        There’s
+                        a reason it’s an
+                        Italian staple and one of the most popular types of pizza in the country.</p>
+                </div>
+            </div>
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Meat Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">6. Meat Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">If pepperoni just isn’t enough, and you’re looking for a pie with a bit
+                        more heft, a meat pizza
+                        is a
+                        perfect and popular
+                        choice. Pile on ground beef and sausage for a hearty meal.</p>
+                </div>
+            </div>
+
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Pepperoni Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">7. Pepperoni Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">There’s a reason this is one of the most popular types of pizza. Who
+                        doesn’t love biting into a
+                        crispy, salty round of
+                        pepperoni?</p>
+                </div>
+            </div>
+
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Supreme Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">8. Supreme Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">When you can’t decide which toppings to get, it’s time for the supreme
+                        pizza. The “supreme”
+                        refers to
+                        the litany of
+                        toppings that come scattered on these pies, from sausage to vegetables to pepperoni. And it’s
+                        the
+                        combination of the
+                        flavors that really makes it sing.</p>
+                </div>
+            </div>
+
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/The Works Pizza.jpg" alt="Error" class="orderImage">
+
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">9. The Works Pizza</h1>
+                    <hr>
+                    <p class="pizzaParagraph">And when the supreme just isn’t enough, you’re ready for the works. It’s a
+                        step up in heartiness
+                        from
+                        the supreme. The “works” usually involves a wide variety of veggie toppings including onions,
+                        olives, and mushrooms, plus bacon and pepperoni.</p>
+                </div>
+            </div>
+
+            <div class="linksPizza">
+                <img src="./TypesOfPizza/Veggie Pizza.jpg" alt="Error" class="orderImage">
+                <div class="pizzaLinks">
+                    <h1 class="pizzaHeader">10. Veggie Pizza </h1>
+                    <hr>
+                    <p class="pizzaParagraph">When you want to jazz up your cheese pizza with color and texture, veggies
+                        are the perfect
+                        topping.
+                        And you’re only
+                        limited by your imagination. Everything from peppers and mushrooms, to eggplant and onions make
+                        for
+                        an exciting and
+                        tasty veggie pizza.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container-4">
+        <div class="container-4">
+            <div class="c4row-1">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li><a href="https://www.facebook.com/Copypaste.parasure567" target="_blank"> Facebook: @Ban</li>
+                    </a>
+                    <li><a href="https://github.com/Blacklion567" target="_blank">Github: @Blacklion567</li></a>
+
+                    <li><a href="https://www.linkedin.com/in/jade-ivan-bringcola-bb9466272/" target="_blank">@Linkedin:
+                            @Tima Petos</li></a>
+
+                    <li><a href="https://www.tiktok.com/@banbringcola?_t=8bUDSZ7xYun&_r=1" target="_blank">TikTok:
+                            @Petos</li></a>
+                    <li><a href="https://www.youtube.com/channel/UCHuVTj0sCJA5YQ_BUTcSPaw" target="_blank">Youtube:
+                            @Ban (Petos Tima)</li></a>
+                </ul>
+            </div>
+
+            <div class="c4row-2">
+                <h1>About Us</h1>
+                <p>Hello I'm Tima Petos. <br> I'm a ASPIRING FRONT-END DEVELOPER <br>
+                    I make this Website to enhance my programming skills. <br> I've been learning programming for past
+                    8-months </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
